@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolland Garros - Tournoi international de France de Tennis</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu-button">
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+        </div>
+        <div id="Vague">
+            <img src="src/img/wave.svg" alt="Vagues">
+        </div>
+        <menu>
+            <a href="#" class="link-menu" id="home">Home</a>
+            <a href="#" class="link-menu">Matchs</a>
+            <a href="#" class="link-menu">Billeterie</a>
+            <a href="#" class="link-menu">Règlement</a>
+        </menu>
+        <div id="title">
+            <img src="src/img/Logo_Roland-Garros.svg.png" alt="Rolland Garros" id="logo">
+            <h1 id="title-page">Rolland Garros</h1>
+        </div>
+    </header>
+    <main>
+
+        <div id="container" >
+            <div id="carrousel">
+                <img src="src/img/stade.jpg" alt="Stade de Rolland Garros">
+                <div class="slide2">
+                    <img src="src/img/kisspng-rafael-nadal-2013-atp-world-tour-finals-tennis-atp-rafael-nadal-5b1fb78be66fe6.2223397015288052599439.png" alt="Rafael Nadal">
+                    <h2>Possible défaite de Rafael Nadal en final ?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="Matchs">
+            <div id="title2" data-aos="zoom-in-up">
+                <img src="src/img/Logo_Roland-Garros.svg.png" alt="Rolland Garros" id="logo2">
+                <h1 id="title-page2">Matchs</h1>
+            </div>
+
+            <div id="matchs-tournoi">
+                <img src="src/img/tennis-ergysport-1.jpeg" alt="Tennis" id="bg-img" data-aos="fade-left">
+                <div id="matchs-termines" data-aos="fade-right">
+                    <div id="mt-1">
+                        <img src="src/img/circle_1.png" class="player" alt="Nadal">
+                        <h3 class="vs">VS</h3>
+                        <img src="src/img/circle_2_crossed.png" class="player" alt="L'adversaire de Nadal">
+                    </div>
+                    <div id="mt-2">
+                        <img src="src/img/circle_3.png" class="player" alt="L'adversaire de Nadal en finale (spoil, oups)">
+                        <h3 class="vs">VS</h3>
+                        <img src="src/img/circle_4_crossed.png" class="player" alt="L'adversaire de Nadal de l'adversaire de Nadal en finale (spoil, oups)">
+                    </div>
+                </div>
+
+                <div id="finale" data-aos="fade-up">
+                    <img src="src/img/circle_1.png" class="player" alt="Nadal">
+                    <h3 class="vs">VS</h3>
+                    <img src="src/img/circle_3.png" class="player" alt="L'adversaire de Nadal en finale (spoil, oups)">
+                </div>
+            </div>
+            <div id="match-en-cours">
+                <iframe id="finale-video" width="560" height="315" src="https://www.youtube.com/embed/OPQoaUQtwMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!--<div id="Billeterie">
+            <img src="src/img/zyro-image" alt="" id="bg-billeterie">
+        </div>-->
+    </main>
+    <!--<h1 id="test" data-aos="fade-up">Un texte</h1>-->
+    <script src="script/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

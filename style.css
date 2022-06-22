@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    --orange:#ff6900;
+    --yellow:#ffffff;
+}
+/*body{
+    overflow-x: hidden;
+}*/
+header{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    left: 0;
+}
+main{
+    justify-content: center;
+    margin: auto;
+}
+#bar1, #bar2, #bar3{
+    background-color: rgb(3, 65, 0);
+    height: 5px;
+    width: 30px;
+    margin-bottom: 6px;
+    display: block;
+    transition: 0.3s;
+}
+#bar1.dorotate{
+    transform: rotate(-45deg) translateY(500%) translateX(-50%);
+}
+#bar2.dorotate{
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+#bar3.dorotate{
+    transform: rotate(45deg) translateX(10px);
+}
+
+#menu-button{
+    position: fixed;
+    cursor: pointer;
+    margin-top: 10px;
+    left: 20px;
+    transition: 0.3s;
+    z-index: 11;
+
+}
+#menu-button.active{
+    transform: translateX(150px);
+}
+#title{
+    display: flex;
+    justify-content: center;
+    transform: translateX(36%);
+}
+#logo{
+    height: 10%;
+    margin: 0 2% 0 2%;
+}
+#title-page{
+    transform: translateY(20px);
+    font-family: Myriad Pro, Product Sans, arial;
+    font-size: 3em;
+}
+#Vague{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg)  translateY(100px);
+    transform-origin: top left;
+    z-index: 2;
+    transition: transform 0.3s;
+}
+#Vague>img{
+    width: 100%;
+}
+#Vague.activation{
+    transform: rotate(90deg) translateY(-99%);
+    z-index: 10;
+    position: fixed;
+}
+menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+}
+.link-menu{
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    left: 0;
+    margin: 0 0 100px 0;
+    font-size: 30px;
+    transform: translateX(-200px) translateY(100px);
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+.link-menu:nth-child(1){
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    left: 0;
+    margin: 0 0 100px 0;
+    font-size: 30px;
+    transform: translateX(-200px) translateY(100px);
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+.link-menu:nth-child(2){
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    left: 0;
+    margin: 0 0 100px 0;
+    font-size: 30px;
+    transform: translateX(-200px) translateY(100px);
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+.link-menu:nth-child(3){
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    left: 0;
+    margin: 0 0 100px 0;
+    font-size: 30px;
+    transform: translateX(-200px) translateY(100px);
+    transition: 0.7s ease-in-out;
+    color: white;
+}
+.link-menu:nth-child(4){
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    left: 0;
+    margin: 0 0 100px 0;
+    font-size: 30px;
+    transform: translateX(-200px) translateY(100px);
+    transition: 0.9s ease-in-out;
+    color: white;
+}
+.link-menu.viens{
+    transform: translateX(50px) translateY(100px);
+    color: white;
+}
+#home{
+    margin-top: 200px;
+}
+
+#container{
+    max-width: 1500px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+#carrousel {
+    display: flex;
+    flex-direction: row;
+    animation: fade 5s ease-in-out 1s infinite alternate;
+}
+.slide2{
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+}
+.slide2>h2{
+    font-family: Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    
+}
+
+@keyframes fade{
+    0%{
+        transform: translateX(0%)
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+#title2{
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: calc(1920px/2);
+    top: 1150px;
+}
+#logo2{
+    width: 4%;
+}
+#title-page2{
+    transform: translateY(20px);
+    font-family: Myriad Pro, Product Sans, arial;
+    font-size: 3em;
+    margin-left: 20px;
+}
+#matchs-tournoi{
+    display: flex;
+    flex-direction: row;
+}
+#matchs-tournoi{
+    position: relative;
+    top: 1700px;
+    transform: translateX(3%);
+}
+#matchs-termines{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    transform: scale(1.1) translateX(-100%);
+}
+#mt-1{
+    display: flex;
+    flex-direction: row;
+}
+#mt-2{
+    display: flex;
+    flex-direction: row;
+}
+#finale{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    transform: scale(1.2);
+    opacity: 1;
+}
+.player{
+    height: 150px;
+    margin: 20px;
+}
+.vs{
+    font-family: Heartless, Another Danger, Droeming, Product Sans, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    transform: translateY(30%);
+    -webkit-text-stroke: 2px white;
+}
+#bg-img{
+    transform: translateX(750px) scale(2.4);
+    border: 2px solid black;
+}
+#finale.hove{
+    opacity: 1;
+}
+#match-en-cours{
+    transform: translateX(100%) translateY(300%);
+    transition: 0.3s ease-in-out;
+}
+#match-en-cours.truc{
+    transform: translateX(66%) translateY(300%);
+}
+#finale-video{
+    border-radius: 50px;
+}
